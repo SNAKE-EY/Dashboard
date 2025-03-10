@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <aside>
+        <div class="sidebar-icon active"><i class="fas fa-th"></i></div>
+        <div class="sidebar-icon"><i class="far fa-calendar-alt"></i></div>
+        <div class="sidebar-icon"><i class="far fa-comment"></i></div>
+        <div class="sidebar-icon"><i class="far fa-chart-bar"></i></div>
+        <div class="sidebar-icon"><i class="fas fa-cog"></i></div>
+        <div class="sidebar-icon"><i class="fas fa-sign-out-alt"></i></div>
+    </aside>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="header-icons">
+                <div class="notification"><i class="far fa-bell"></i></div>
+                <div class="user-profile">
+                    <img src="doctor-1.jpg" alt="Dr. Lois">
+                    <span>Dr. Lois</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="left-column">
+                <h2>Good Morning <span class="doctor-name">Dr. Lois!</span></h2>
+                <div class="visits-card">
+                    <div class="visits-content">
+                        <div class="visits">
+                            <h3>Visits for Today</h3>
+                            <div class="visits-number">104</div>
+                        </div>
+                        <div class="visits-details">
+                            <div class="visits-detail">
+                                <h3>New Patients</h3>
+                                <h1>40 <span class="green-text">51% <i class="fas fa-arrow-up"></i></span></h1>
+                            </div>
+                            <div class="visits-detail">
+                                <h3>Old Patients</h3>
+                                <h1>64 <span class="red-text">20% <i class="fas fa-arrow-down"></i></span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visits-image">
+                        <img src="doctor-1.jpg" alt="Dr. Lois">
+                    </div>
+                </div>
+
+                <div class="patient-section">
+                    <div class="patient-list-section">
+                        <div class="patient-list-header">
+                            <h3>Patient List</h3>
+                            <div class="dropdown">
+                                <select>
+                                    <option>Today</option>
+                                    <option>Tomorrow</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="patient-list">
+                            <div class="patient-item">
+                                <div class="patient-info">
+                                    <div class="patient-initials sm">SM</div>
+                                    <div class="patient-details">
+                                        <strong>Kofi Babone</strong>
+                                        <div class="visit-type">Weekly Visit</div>
+                                    </div>
+                                </div>
+                                <div class="patient-time">8:15 AM</div>
+                            </div>
+                            <div class="patient-item">
+                                <div class="patient-info">
+                                    <div class="patient-initials ad">AA</div>
+                                    <div class="patient-details">
+                                        <strong>Amy Agyemang</strong>
+                                        <div class="visit-type">Routine Checkup</div>
+                                    </div>
+                                </div>
+                                <div class="patient-time">9:30 AM</div>
+                            </div>
+                            <div class="patient-item">
+                                <div class="patient-info">
+                                    <div class="patient-initials dj">JS</div>
+                                    <div class="patient-details">
+                                        <strong>John Sakyi</strong>
+                                        <div class="visit-type">Report</div>
+                                    </div>
+                                </div>
+                                <div class="patient-time">9:00 AM</div>
+                            </div>
+                            <div class="patient-item">
+                                <div class="patient-info">
+                                    <div class="patient-initials sm">SP</div>
+                                    <div class="patient-details">
+                                        <strong>Susan Plange</strong>
+                                        <div class="visit-type">Weekly Visit</div>
+                                    </div>
+                                </div>
+                                <div class="patient-time">10:15 AM</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="consultation-section">
+                        <div class="patient-profile">
+                            <div class="patient-header">
+                                <div class="patient-avatar">
+                                    <div class="patient-initials dw">AP</div>
+                                </div>
+                                <div class="patient-basic-info">
+                                    <h3>Asare Patrick</h3>
+                                    <p>Male • 21 Years 3 Months</p>
+                                </div>
+                                <div class="patient-menu">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="patient-symptoms">
+                                <div class="symptom">
+                                    <div class="symptom-icon fever"></div>
+                                    <div class="symptom-name">Fever</div>
+                                </div>
+                                <div class="symptom">
+                                    <div class="symptom-icon cough"></div>
+                                    <div class="symptom-name">Cough</div>
+                                </div>
+                                <div class="symptom">
+                                    <div class="symptom-icon heartburn"></div>
+                                    <div class="symptom-name">Heart Burn</div>
+                                </div>
+                            </div>
+                            
+                            <div class="patient-records">
+                                <div class="record">
+                                    <div class="record-label">Last Checked</div>
+                                    <div class="record-value">
+                                        Dr. Everly on 21 April,2024
+                                        <div class="prescription-id">Prescription #2458112121</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="record">
+                                    <div class="record-label">Observation</div>
+                                    <div class="record-value">
+                                        High fever and cough at normal hemoglobin levels
+                                    </div>
+                                </div>
+                                
+                                <div class="record">
+                                    <div class="record-label">Prescription</div>
+                                    <div class="record-value">
+                                        <p>Paracetamol - 2 times a day</p>
+                                        <p>Diazepam - Day and Night before meal</p>
+                                        <p>Vikzet</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="calendar-section">
+                    <div class="calendar-header">
+                        <h3>Calendar</h3>
+                        <div class="calendar-dropdown">
+                            <span>March 2025</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-weekdays">
+                        <div class="weekday">SUN</div>
+                        <div class="weekday">MON</div>
+                        <div class="weekday">TUE</div>
+                        <div class="weekday">WED</div>
+                        <div class="weekday">THU</div>
+                        <div class="weekday">FRI</div>
+                        <div class="weekday">SAT</div>
+                    </div>
+                    
+                    <div class="calendar-days">
+                        <!-- Calendar days will be generated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="upcoming-section">
+                    <div class="upcoming-header">
+                        <h3>Upcoming</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    
+                    <div class="upcoming-list">
+                        <div class="upcoming-item">
+                            <div class="upcoming-icon"><span>M</span></div>
+                            <div class="upcoming-details">
+                                <strong>Monthly doctor's meet</strong>
+                                <div class="event-date">25 March, 2025 | 04:00 PM</div>
+                            </div>
+                        </div>
+                        
+                        <div class="upcoming-banner">
+                            <div class="banner-tag">MUST READ</div>
+                            <div class="banner-content">
+                                <strong>Equitable medical education with efforts toward real change</strong>
+                            </div>
+                            <img src="food.jpg" alt="Medical supplies">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
